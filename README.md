@@ -4,3 +4,5 @@
 2. If the raylib src folder is not in C:/raylib/raylib/src, you'll need to change it in the tasks.json file
 
 3. You can change the .exe name in the tasks.json file, but you'll need to change it in the launch.json file too
+
+4. Press F5 to run
