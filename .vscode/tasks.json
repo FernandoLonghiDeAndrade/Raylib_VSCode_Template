@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile C (Raylib)",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "src/*.c",
+        "-o", "${workspaceFolder}/game.exe", // Out name
+        "-IC:/raylib/raylib/src", // Raylib src folder path
+        "-LC:/raylib/raylib/src", // Raylib src folder path
+        "-lraylib",
+        "-lopengl32",
+        "-lgdi32",
+        "-lwinmm"
+      ],
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Compiles .c files with Raylib"
+    },
+    {
+      "label": "Compile C++ (Raylib)",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "src/*.cpp",
+        "-o", "${workspaceFolder}/game.exe", // Out name
+        "-IC:/raylib/raylib/src", // Raylib src folder path
+        "-LC:/raylib/raylib/src", // Raylib src folder path
+        "-lraylib",
+        "-lopengl32",
+        "-lgdi32",
+        "-lwinmm"
+      ],
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Compiles .cpp files with Raylib"
+    }
+  ]
+}
