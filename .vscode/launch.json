@@ -10,7 +10,6 @@
       "stopAtEntry": false,
       "cwd": "${fileDirname}",
       "environment": [],
-      "console": "externalTerminal",
       "preLaunchTask": "Compile C (Raylib)"
     },
     {
@@ -22,7 +21,6 @@
       "stopAtEntry": false,
       "cwd": "${fileDirname}",
       "environment": [],
-      "console": "externalTerminal",
       "preLaunchTask": "Compile C++ (Raylib)"
     }
   ]
