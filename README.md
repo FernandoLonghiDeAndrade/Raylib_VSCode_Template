@@ -10,4 +10,4 @@
 
 3. You can change the .exe name in the tasks.json file, but you'll need to change it in the launch.json file too
 
-4. Press F5 to run
+4. Click on "Run C/C++ File" on the top right corner of one of your C/C++ files and select the right Run Raylib task. After the first time, just press F5 to run

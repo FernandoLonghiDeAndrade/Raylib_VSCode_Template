@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Compile C (Raylib)",
+      "label": "Compile Raylib (C)",
       "type": "shell",
       "command": "gcc",
       "args": [
@@ -20,7 +20,7 @@
       "detail": "Compiles .c files with Raylib"
     },
     {
-      "label": "Compile C++ (Raylib)",
+      "label": "Compile Raylib (C++)",
       "type": "shell",
       "command": "g++",
       "args": [
