@@ -1,42 +1,38 @@
-📚 Como Compilar e Executar um Projeto com raylib
-🛠️ Compilação do Raylib
-Abra o terminal (cmd) e vá até a pasta src do raylib
-(Geralmente em C:\raylib\raylib\src)
-Execute o comando abaixo:
+# 📚 How to Build and Run a **raylib** Project
 
-bash
-Copy
-Edit
-mingw32-make PLATFORM=PLATFORM_DESKTOP RAYLIB_LIBTYPE=STATIC
-1.1. ⚠️ Erro durante a compilação?
+## 🛠️ Building raylib
 
-Isso geralmente acontece por usar uma versão incompatível do MinGW.
+1. Run the following command in the terminal (`cmd`) inside the `src` folder of raylib
+   *(usually located at **`C:\raylib\raylib\src`**)*:
 
-Baixe a versão correta aqui.
+   ```bash
+   mingw32-make PLATFORM=PLATFORM_DESKTOP RAYLIB_LIBTYPE=STATIC
+   ```
 
-Após baixar e extrair:
+   1.1. ⚠️ If you get an error (not just warnings), it’s probably because you don’t have the correct version of MinGW.
 
-Mova a pasta mingw64 para o diretório raiz (geralmente C:\).
+   * Download the correct one from [this link](https://winlibs.com/#download).
+   * After downloading and extracting:
 
-Adicione o caminho C:\mingw64\bin às variáveis de ambiente do sistema (procure por "variáveis de ambiente").
+     * Move the `mingw64` folder to your root directory (usually `C:\`).
+     * Add `C:\mingw64\bin` to your system’s **PATH** environment variable.
+     * Restart your terminal (and VSCode) and try running the command again.
 
-Reinicie o terminal (e o VSCode) e tente o comando novamente.
+---
 
-🔧 Configuração do Projeto
-Caminho do src diferente?
+## 🔧 Project Configuration
 
-Se o raylib não está em C:/raylib/raylib/src, ajuste o caminho no arquivo tasks.json.
+2. If the raylib `src` folder is **not located at** `C:/raylib/raylib/src`, adjust the path in the `tasks.json` file.
 
-Quer mudar o nome do executável?
+3. To change the executable (`.exe`) name, update it in `tasks.json` and also in `launch.json`.
 
-Altere o nome no tasks.json.
+---
 
-Não se esqueça de atualizar o mesmo nome no launch.json.
+## 🚀 Running in VSCode
 
-🚀 Executando no VSCode
-No menu lateral Run and Debug, selecione a task correta:
+4. In the **Run and Debug** menu (left sidebar), select the appropriate task:
 
-Run Raylib (C) para C
-
-Run Raylib (C++) para C++
-Depois é só apertar F5 para compilar e executar!
+   * **Run Raylib (C)** – for C projects
+   * **Run Raylib (C++)** – for C++ projects
+     
+5. Then press **F5** to build and run.
