@@ -10,6 +10,8 @@
         "-o", "${workspaceFolder}/game.exe", // Out name
         "-IC:/raylib/raylib/src", // Raylib src folder path
         "-LC:/raylib/raylib/src", // Raylib src folder path
+        "-Isrc",
+        "-Iinclude",
         "-lraylib",
         "-lopengl32",
         "-lgdi32",
@@ -28,6 +30,8 @@
         "-o", "${workspaceFolder}/game.exe", // Out name
         "-IC:/raylib/raylib/src", // Raylib src folder path
         "-LC:/raylib/raylib/src", // Raylib src folder path
+        "-Isrc",
+        "-Iinclude",
         "-lraylib",
         "-lopengl32",
         "-lgdi32",

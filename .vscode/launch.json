@@ -9,9 +9,10 @@
       "program": "${workspaceFolder}/game.exe", // Out name
       "args": [],
       "stopAtEntry": false,
-      "cwd": "${fileDirname}",
+      "cwd": "${workspaceFolder}",
       "environment": [],
-      "preLaunchTask": "Compile Raylib (C)"
+      "preLaunchTask": "Compile Raylib (C)",
+      "console": "integratedTerminal"
     },
     {
       "name": "Run Raylib (C++)",
@@ -20,9 +21,10 @@
       "program": "${workspaceFolder}/game.exe", // Out name
       "args": [],
       "stopAtEntry": false,
-      "cwd": "${fileDirname}",
+      "cwd": "${workspaceFolder}",
       "environment": [],
-      "preLaunchTask": "Compile Raylib (C++)"
+      "preLaunchTask": "Compile Raylib (C++)",
+      "console": "integratedTerminal"
     }
   ]
 }
